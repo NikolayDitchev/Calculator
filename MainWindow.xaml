@@ -1,0 +1,24 @@
+﻿<Window x:Class="calculator_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calculator_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <TextBlock
+            Text="Input your equation:"
+            Margin="71,81,611.333,320.667"/>
+        <TextBox 
+            Name="equation"
+            Margin="187,81,317.333,267.667"/>
+        <Button 
+            Content="Submit"
+            Margin="266,203,374.333,178.667" Click="Button_Click"/>
+        <TextBlock
+            Name ="Output"
+            Margin="448,184,40.333,102.667"      
+            />
+    </Grid>
+</Window>
